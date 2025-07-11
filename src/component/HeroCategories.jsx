@@ -26,7 +26,7 @@ const HeroCategories = ({id}) => {
 
                             <div className="cat-box" key={index}>
                               <Link to={`/collection/${item.name}`}>
-                                <img src={`/public/${item.categoryIcon}`} alt="FreshNest" />
+                                <img src={`/${item.categoryIcon}`} alt="FreshNest" />
                                 <h4>{item.name}</h4>
                                 <h6>({item.items.length} items)</h6>
 

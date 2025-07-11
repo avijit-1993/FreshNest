@@ -64,7 +64,7 @@ const OrderConfirm = () => {
                                                 <div className="pro-sum-box" key={index}>
                                                     <div className="pro-sum-imgBox">
                                                         <div className="pro-sum-img">
-                                                            <img className="pro-img-checkout" alt="FreshNest" src={`/public/${item.image}`} />
+                                                            <img className="pro-img-checkout" alt="FreshNest" src={`/${item.image}`} />
                                                         </div>
                                                         <div className="pro-sum-imgInfo">
                                                             <h6 className="pro-name-text">{item.name}</h6>

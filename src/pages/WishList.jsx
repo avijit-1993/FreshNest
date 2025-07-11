@@ -24,7 +24,7 @@ const goToProductPage = (id)=>{
             <>
             <div className="container text-center py-5">
 
-                <img src="/public/emptyCart.gif" width={250} alt="FreshNest" />
+                <img src="/emptyCart.gif" width={250} alt="FreshNest" />
                 <h2>Your Wishlist Is Empty</h2>
 
                 <Link to="/product" style={{textDecoration:"none",fontWeight:"bold",color:"#80b500"}}>SHOP NOW</Link>
@@ -55,7 +55,7 @@ const goToProductPage = (id)=>{
         <div className="cart-item" key={index}>
 
         <div className="cart-pro-img">
-             <img src={`/public/${item.image}`} onClick={()=>goToProductPage(item.id)} alt="Tomato" className="cart-image" />
+             <img src={`/${item.image}`} onClick={()=>goToProductPage(item.id)} alt="Tomato" className="cart-image" />
         <div className="cart-details" onClick={()=>goToProductPage(item.id)}>
           <div className="item-name" onClick={()=>goToProductPage(item.id)}>{item.name}</div>
           <div className="item-weight" onClick={()=>goToProductPage(item.id)}>{item.weight}</div>
@@ -65,7 +65,7 @@ const goToProductPage = (id)=>{
        
         
         <div className="delete-btn" onClick={()=>removeFromWishlist(item)}>
-          <img src="/public/trash.svg" alt="FreshNest" />
+          <img src="/trash.svg" alt="FreshNest" />
         </div>
       </div>
 

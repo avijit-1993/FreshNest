@@ -4,19 +4,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const images = [
-  "/public/tomato.png",
-  "/public/tomato.png",
-  "/public/tomato.png",
-  "/public/tomato.png"
+  "/tomato.png",
+  "/tomato.png",
+  "/tomato.png",
+  "/tomato.png"
 ];
 
 const ImageGallery = ({image}) => {
 
   const images = [
-  `/public/${image}`,
-  `/public/${image}`,
-  `/public/${image}`,
-  `/public/${image}`
+  `/${image}`,
+  `/${image}`,
+  `/${image}`,
+  `/${image}`
 ];
 
 

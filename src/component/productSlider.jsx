@@ -47,7 +47,7 @@ const productSlider = ({ proItem }) => {
             <div className="arrow-box">
                 <button className='prev' ref={prevRef}>
                     <img
-                        src="/public/arrow.png"
+                        src="/arrow.png"
                         alt="Previous"
 
                         className="absolute arrow prev left-0 top-1/2 z-10 -translate-y-1/2 cursor-pointer w-10 h-10"
@@ -56,7 +56,7 @@ const productSlider = ({ proItem }) => {
 
                 <button className='next' ref={nextRef}>
                     <img
-                        src="/public/arrow1.png"
+                        src="/arrow1.png"
                         alt="Next"
 
                         className="absolute arrow next right-0 top-1/2 z-10 -translate-y-1/2 cursor-pointer w-10 h-10"
@@ -102,7 +102,7 @@ const productSlider = ({ proItem }) => {
                             <SwiperSlide >
                                 <div className='pro-slider-box'>
                                     <div className="proSl-img position-relative">
-                                        <img src={`/public/${item.image}`} alt="FreshNest Logo" />
+                                        <img src={`/${item.image}`} alt="FreshNest Logo" />
 
                                         {item.isNew ? <span className='tagSpan new-tag'>New</span> : null}
                                         {item.onSale ? <span className='tagSpan sale-tag'>Sale</span> : null}
@@ -110,10 +110,10 @@ const productSlider = ({ proItem }) => {
                                         <Link className='button' to={`/product/${item.id}`}>SHOP NOW</Link>
 
                                         <span onClick={() => addTocart(item)} className="icon-box cart-icon">
-                                            <img src={ItemIsOnCart(item) ? "/public/fill-cart.png" : "/public/cart.svg"} alt="FreshNest Cart" />
+                                            <img src={ItemIsOnCart(item) ? "/fill-cart.png" : "/cart.svg"} alt="FreshNest Cart" />
                                         </span>
                                         <span onClick={() => { addToWishList(item) }} className="icon-box wishlist-ion">
-                                            <img src={ItemIsOnWishList(item) ? "/public/fill-wishlist.png" : "/public/wishlist.svg"} alt="FreshNest Wishlist" />
+                                            <img src={ItemIsOnWishList(item) ? "/fill-wishlist.png" : "/wishlist.svg"} alt="FreshNest Wishlist" />
                                         </span>
                                     </div>
                                     <div className="proPrice">

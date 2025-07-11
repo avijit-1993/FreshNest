@@ -32,7 +32,7 @@ const FeaturedSection = () => {
             return(
                 <div className='f-box' key={index}>
                 <div className='f-img'>
-                    <img src={`/public/${item.feaImg}`} alt="FreshNest" />
+                    <img src={`/${item.feaImg}`} alt="FreshNest" />
                 </div>
                 <div className='f-text'>
                     <h3>{item.haeding}</h3>

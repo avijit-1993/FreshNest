@@ -22,7 +22,7 @@ const CheckoutSummery = () => {
                                                 <div className="pro-sum-box">
                                                     <div className="pro-sum-imgBox">
                                                         <div className="pro-sum-img">
-                                                            <img src={`/public/${item.image}`} className='pro-img-checkout' alt="FreshNest" />
+                                                            <img src={`/${item.image}`} className='pro-img-checkout' alt="FreshNest" />
                                                         </div>                                            
                                                         <div className="pro-sum-imgInfo">
                                                             <h6 className='pro-name-text'>{item.name}</h6>

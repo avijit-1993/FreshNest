@@ -8,7 +8,7 @@ const PageNotFound = () => {
     <div className='page-404'>
       <div className="container text-center ">
             
-            <img src="/public/3828537.jpg" alt="FreshNest"/>
+            <img src="/3828537.jpg" alt="FreshNest"/>
 
             <button onClick={()=> navigate("/")}>Back To Home</button>
       </div>

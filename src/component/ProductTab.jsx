@@ -78,7 +78,7 @@ const ProductTab = () => {
 
                                 <div className='pro-slider-box' key={index}>
                                     <div className="proSl-img position-relative">
-                                        <img src={`/public/${item.image}`} alt="FreshNest Logo" />
+                                        <img src={`/${item.image}`} alt="FreshNest Logo" />
 
                                         {item.isNew ? <span className='tagSpan new-tag'>New</span> : null}
                                         {item.onSale ? <span className='tagSpan sale-tag'>Sale</span> : null}
@@ -86,10 +86,10 @@ const ProductTab = () => {
                                         <Link className='button' to={`/product/${item.id}`}>SHOP NOW</Link>
 
                                         <span onClick={() => addTocart(item)} className="icon-box cart-icon">
-                                            <img src={ItemIsOnCart(item) ? "/public/fill-cart.png" : "/public/cart.svg"} alt="FreshNest Cart" />
+                                            <img src={ItemIsOnCart(item) ? "/fill-cart.png" : "/cart.svg"} alt="FreshNest Cart" />
                                         </span>
                                         <span onClick={() => { addToWishList(item) }} className="icon-box wishlist-ion">
-                                            <img src={ItemIsOnWishList(item) ? "/public/fill-wishlist.png" : "/public/wishlist.svg"} alt="FreshNest Wishlist" />
+                                            <img src={ItemIsOnWishList(item) ? "/fill-wishlist.png" : "/wishlist.svg"} alt="FreshNest Wishlist" />
                                         </span>
                                     </div>
                                     <div className="proPrice">

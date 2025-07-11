@@ -178,7 +178,7 @@ const ProductDetail = () => {
                                         </div>
                                         <button onClick={() => { addToWishList(productItem) }} className="wish-btn">
 
-                                            <img className='pro-star' src={ItemIsInWishlist ? "/public/fill-wishlist.png" : "/public/wishlist.svg"} alt="FreshNest Wishlist" />
+                                            <img className='pro-star' src={ItemIsInWishlist ? "/fill-wishlist.png" : "/wishlist.svg"} alt="FreshNest Wishlist" />
                                         </button>
                                     </div>
 

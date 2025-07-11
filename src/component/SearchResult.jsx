@@ -18,7 +18,7 @@ const SearchResult = ({data,searchHideHandler}) => {
                 
                   <div className="cart-pro-img" key={index}>
                    
-                        <img alt="Tomato" className="cart-image" src={`/public/${item.image}`} />
+                        <img alt="Tomato" className="cart-image" src={`/${item.image}`} />
                     <div className="cart-details">
                        <Link to={`/product/${item.id}`} >  <div className="item-name" onClick={()=>{toggleMenu(), searchHideHandler()}} >{item.name}</div></Link>
                     <div className="item-weight">{true?"In Stock":"Out Of Stock"}</div>

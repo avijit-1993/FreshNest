@@ -24,7 +24,7 @@ const CartContent = () => {
             <>
             <div className="container text-center py-5">
 
-                <img src="/public/emptyCart.gif" width={250} alt="FreshNest" />
+                <img src="/emptyCart.gif" width={250} alt="FreshNest" />
                 <h2>Your Cart Is Empty</h2>
 
                 <Link to="/product" style={{textDecoration:"none",fontWeight:"bold",color:"#80b500"}}>SHOP NOW</Link>
