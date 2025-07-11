@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Routes, Route, useLocation,useMatches, } from 'react-router-dom'
-import Home from './pages/home'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './component/NavBar';
 import Footer from './component/Footer';
@@ -15,6 +15,8 @@ import Checkout from './pages/Checkout';
 import OrderConfirm from './pages/OrderConfirm';
 import About from './pages/About';
 import Contact from './pages/Contact';
+
+import Home from './pages/Home';
 
 
 const App = () => {
