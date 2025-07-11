@@ -1,0 +1,68 @@
+.checkout-page{
+    margin-top: 50px;
+}
+.frm-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+        margin-bottom: 18px;
+}
+.frm-box label{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    
+}
+.frm-box{
+flex: 1;
+}
+.frm-box input{
+    height: 44px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+
+.pro-sum-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.pro-sum-imgBox{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+.pro-sum-imgBox img{
+    width: 60px;
+}
+.pro-price-text{
+    color:#80B500 ;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.pro-price-text span{
+    color: #000;
+    font-size: 12px;
+}
+
+.pro-sum-box h6{
+    margin-bottom: 0px;
+}
+.pro-name-text{
+    margin-bottom: 5px !important;
+}
+.error{
+    color: red;
+}
+
+
+@media (max-width: 767.5px) {
+    .frm-wrapper {
+    flex-direction: column;
+}
+}

@@ -1,0 +1,29 @@
+.cbi-box {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.cbi-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.user-detai-text {
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.user-detai-text p:nth-child(1) {
+    font-weight: 700;
+    width: 80px;
+}
+.user-detai-text p {
+    margin-bottom: 0px;
+}
+.user-detai-text p:nth-child(2) {
+    text-align: left;
+    width: calc(100% - 100px);
+}

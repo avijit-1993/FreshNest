@@ -1,0 +1,90 @@
+.checkout-box {
+  padding: 20px;
+  background-color: #F7F5EB;
+  max-width: 100%;
+}
+
+.promo-title {
+  font-size: 20px;
+  font-weight:600;
+  margin-bottom: 15px;
+}
+
+.promo-input-group {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #80B500;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f8f8e1;
+      padding: 4px;
+}
+
+.promo-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.apply-btn {
+  background-color: #80B500;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.price-details {
+  background-color: #f8f8e1;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #9A9CAA;
+}
+
+.total {
+  font-weight: 600;
+  color: black;
+}
+
+.total-amount {
+  color: black;
+}
+
+.checkout-btn {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.car-contentWarpper{
+        display: flex
+;
+    justify-content: space-between;
+        flex-wrap: wrap;
+}
+.cartTable{
+    width: calc(65% - 25px);
+}
+.cartSummery{
+    width: calc(35% - 25px);
+}
+.car-contentWarpper{
+    margin-top: 60px;
+}
