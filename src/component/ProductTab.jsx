@@ -59,7 +59,7 @@ const ProductTab = () => {
                             <img src="/vegetableIcon.svg" alt="FreshNest" /> Vegetables
                         </button>
                         <button className={filterInfo == "Fruits" ? "active" : ""} onClick={() => handleFilter("Fruits")}>
-                            <img src="/fruitsIcon.svg" alt="FreshNest" /> FRUITS
+                            <img src="/fruitsIcon.svg" alt="FreshNest" /> Fruits
                         </button>
                         <button className={filterInfo == "Meat" ? "active" : ""} onClick={() => handleFilter("Meat")}>
                             <img src="/meatIcon.svg" alt="FreshNest" /> Meat
@@ -94,7 +94,7 @@ const ProductTab = () => {
                                     </div>
                                     <div className="proPrice">
                                         <div className="price-boxText">
-                                            <h4>{item.name}</h4>
+                                          <Link className='pro-name-text' to={`/product/${item.id}`}>  <h4>{item.name}</h4></Link>
                                             <span className='old-price'>${item.price + 20}.00</span> <span className='price'>${item.price}.00/{item.unit}</span>
                                         </div>
                                         <div className="pro-star">
