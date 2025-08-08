@@ -8,12 +8,15 @@ const SearchBar = () => {
   const [productItem, setProductItem] = useState([])
   const [productName, setProductName] = useState()
 
+  const [isItemAvailable,setIsItemAvailable] = useState(false)
+
   const SearchFieldValue = useRef()
 
   const handleGetValue = () => {
 
       if (SearchFieldValue.current) {
         const inputValue = SearchFieldValue.current.value;
+        
 
         setProductName(inputValue)
 
@@ -38,6 +41,7 @@ const SearchBar = () => {
 
 if (!productName || productName.trim() === "") {
     setProductItem([]); 
+    setIsItemAvailable(false)
     return;
   }
 
@@ -49,7 +53,8 @@ if (!productName || productName.trim() === "") {
   displayItem = displayItem?.slice(0, 4)
 
 
-    setProductItem(displayItem)
+    setProductItem(displayItem);
+    setIsItemAvailable(true)
   }
 
 
@@ -70,7 +75,7 @@ if (!productName || productName.trim() === "") {
   }, [productName])
 
 
-
+console.log(isItemAvailable)
 
   return (
     <>
@@ -80,8 +85,9 @@ if (!productName || productName.trim() === "") {
         <img src="/search.svg" alt="FreshNest Search " />
       </button>
 
-      {productItem.length > 0 ? <SearchResult  data ={productItem} searchHide = {searchHideHandler} searchHideHandler={searchHideHandler}/> :null}
+      {productItem.length > 0  ? <SearchResult  data ={productItem} searchHide = {searchHideHandler} searchHideHandler ={searchHideHandler}/> : <div className="sr-box" style={{display : isItemAvailable ? "block" : "none" }}>no result found..</div>}
 
+      
 
     </>
   )
